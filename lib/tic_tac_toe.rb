@@ -81,7 +81,7 @@ def turn(board)
     index = input_to_index(input)
     if valid_move?(board, index)
       move(board, index, current_player(board))
-      binding.pry
+#      binding.pry
       display_board(board)
     else
       puts "invalid"
@@ -101,7 +101,7 @@ end
 
 def play(board)
   until over?(board) do
-    binding.pry
+#    binding.pry
     turn(board)
   end
   return winner(board)
